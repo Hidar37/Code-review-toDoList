@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List Project</title>
+  <!-- Fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/27219c429c.js" crossorigin="anonymous"></script>
+<script defer src="main.js"></script></head>
+
+<body>
+  <main>
+    <header>
+      <h1>Today's To Do</h1>
+      <p id="recycle"><i class="fa-solid fa-arrow-rotate-left"></i></p>
+    </header>
+    <div class="task-wrapper">
+      <form action="" method="GET" id="task-form">
+        <div class="underline">
+          <input type="text" id="task" required placeholder="Add to your list...">
+          <button type="submit" id="enter-btn" class="btn"><i class="fa-solid fa-arrow-left-long change-color"></i></button>
+        </div>
+      </form>
+      <!-- Task List -->
+      <ul class="nav" id="nav">
+        <!-- adding Dynamicaly li To ul -->
+      </ul>
+      <button id="clear" class="btn">Clear all completed</button>
+    </div>
+  </main>
+</body>
+
+</html>
