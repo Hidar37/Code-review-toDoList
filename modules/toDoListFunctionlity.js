@@ -62,7 +62,7 @@ export default class ToDoList {
   };
 
   editeInputText = (inputTextAddress, arrayDescription) => {
-    inputTextAddress.addEventListener('focusout', () => {
+    inputTextAddress.addEventListener('input', () => {
       if (inputTextAddress.value !== '') {
         arrayDescription.description = inputTextAddress.value;
         localStorage.setItem('toDoListItems', JSON.stringify(this.toDoListArray));
